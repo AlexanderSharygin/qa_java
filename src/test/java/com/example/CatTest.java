@@ -1,5 +1,6 @@
 package com.example;
 
+
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -10,11 +11,10 @@ import org.mockito.junit.MockitoJUnitRunner;
 
 @RunWith(MockitoJUnitRunner.class)
 public class CatTest {
-    @Mock
-   Feline feline;
 
-@Mock
-Animal animal;
+    @Mock
+    Feline feline;
+
 
 
     @Test
@@ -22,7 +22,7 @@ Animal animal;
         Cat cat = new Cat(feline);
         String expected = "Мяу";
         String actual = cat.getSound();
-        Assert.assertEquals("Incorrect getSound method result",expected,actual);
+       Assert.assertEquals("Incorrect getSound method result", expected, actual);
 
 
     }
