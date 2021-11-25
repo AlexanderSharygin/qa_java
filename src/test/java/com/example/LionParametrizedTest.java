@@ -28,7 +28,7 @@ public class LionParametrizedTest {
 
 
     @Parameterized.Parameters
-    public static Object[][] getTestData() {
+    public static Object[][] getDataForTests() {
         Object[][] objects = {
                 {"Самец", true},
                 {"Самка", false},

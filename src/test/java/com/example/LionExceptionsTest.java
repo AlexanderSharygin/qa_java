@@ -11,11 +11,11 @@ public class LionExceptionsTest {
     @Mock
     Feline feline;
     @Test
-    public void testDoesHaveManeExceptionThrowing() throws Exception {
-       try {
+    public void testDoesHaveManeExceptionThrowing()
+    {
+       try
+       {
            Lion lion = new Lion("Test", feline);
-           boolean actual = lion.doesHaveMane();
-
        }
        catch (Exception e)
        {

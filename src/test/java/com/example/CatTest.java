@@ -2,6 +2,7 @@ package com.example;
 
 
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
@@ -12,28 +13,30 @@ import org.mockito.junit.MockitoJUnitRunner;
 @RunWith(MockitoJUnitRunner.class)
 public class CatTest {
 
+    private Cat cat;
+
     @Mock
     Feline feline;
 
-
-
-    @Test
-    public void testGetSound() {
-        Cat cat = new Cat(feline);
-        String expected = "Мяу";
-        String actual = cat.getSound();
-       Assert.assertEquals("Incorrect getSound method result", expected, actual);
-
-
+    @Before
+    public void beforeTest()
+    {
+        cat = new Cat(feline);
     }
 
     @Test
-    public void testGetMeat() throws Exception {
+    public void testGetSound()
+    {
+       String expected = "Мяу";
+       String actual = cat.getSound();
+       Assert.assertEquals("Incorrect getSound method result", expected, actual);
+    }
 
-        Cat cat = new Cat(feline);
+    @Test
+    public void testGetMeat() throws Exception
+    {
         cat.getFood();
         Mockito.verify(feline).eatMeat();
-
     }
 
 }

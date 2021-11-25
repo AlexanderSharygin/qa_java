@@ -14,35 +14,31 @@ import org.mockito.junit.MockitoJUnitRunner;
 @RunWith(MockitoJUnitRunner.class)
 public class LionTest {
 
+    private Lion lion;
+
     @Mock
     Feline feline;
 
+    @Before
+    public void beforeTest() throws Exception {
+        lion = new Lion("Самец", feline);
+    }
 
 
     @Test
-    public void testGetKittens() throws Exception {
-
-        Lion lion = new Lion("Самец", feline);
+    public void testGetKittens() {
         lion.getKittens();
         Mockito.verify(feline).getKittens();
-
-
     }
 
     @Test
     public void testGetFood() throws Exception {
-
-        Lion lion = new Lion("Самец", feline);
         lion.getFood();
         Mockito.verify(feline).getFood("Хищник");
-
-
     }
 
 
-
-
-    }
+}
 
 
 
