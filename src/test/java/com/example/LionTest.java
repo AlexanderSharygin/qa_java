@@ -35,6 +35,7 @@ public class LionTest {
     public void testGetFood() throws Exception {
         lion.getFood();
         Mockito.verify(feline).getFood("Хищник");
+        
     }
 
 
