@@ -3,13 +3,17 @@ package com.example;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+
+
+
 import java.util.List;
 
 
 public class FelineTest {
 
 
-    private Feline feline;
+  private Feline feline;
+
 
     @Before
     public void beforeTest()
@@ -21,9 +25,10 @@ public class FelineTest {
     @Test
     public void testEatMeat() throws Exception
     {
-      List<String> actual = feline.eatMeat();
-      List<String> expected = List.of("Животные", "Птицы", "Рыба");
-      Assert.assertEquals("Incorrect food values were returned", actual, expected);
+
+        List<String> actual = feline.eatMeat();
+        List<String> expected = List.of("Животные", "Птицы", "Рыба");
+        Assert.assertEquals("Incorrect food values were returned", actual, expected);
     }
 
     @Test
