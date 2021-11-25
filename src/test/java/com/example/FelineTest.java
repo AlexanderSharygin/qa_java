@@ -23,7 +23,7 @@ public class FelineTest {
     {
       List<String> actual = feline.eatMeat();
       List<String> expected = List.of("Животные", "Птицы", "Рыба");
-      Assert.assertEquals("", actual, expected);
+      Assert.assertEquals("Incorrect food values were returned", actual, expected);
     }
 
     @Test

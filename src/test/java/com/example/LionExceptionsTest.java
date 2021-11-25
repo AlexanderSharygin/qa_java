@@ -19,7 +19,7 @@ public class LionExceptionsTest {
        }
        catch (Exception e)
        {
-           Assert.assertTrue(e.getMessage().equals("Используйте допустимые значения пола животного - самей или самка"));
+           Assert.assertEquals("Используйте допустимые значения пола животного - самей или самка", e.getMessage());
 
        }
     }

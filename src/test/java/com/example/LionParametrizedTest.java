@@ -29,11 +29,10 @@ public class LionParametrizedTest {
 
     @Parameterized.Parameters
     public static Object[][] getDataForTests() {
-        Object[][] objects = {
+        return new Object[][]{
                 {"Самец", true},
                 {"Самка", false},
         };
-        return objects;
     }
 
     @Before
