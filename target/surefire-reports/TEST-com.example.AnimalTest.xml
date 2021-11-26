@@ -65,7 +65,7 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="com.example.AnimalTest" name="getFoodForHerbivore" time="0"/>
-  <testcase classname="com.example.AnimalTest" name="testGetFoodForPredator" time="0"/>
-  <testcase classname="com.example.AnimalTest" name="getFamily" time="0"/>
+  <testcase classname="com.example.AnimalTest" name="getFamilyCorrectStringReturned" time="0"/>
+  <testcase classname="com.example.AnimalTest" name="getFoodForHerbivoreCorrectListOfFoodReturned" time="0"/>
+  <testcase classname="com.example.AnimalTest" name="getFoodForPredatorCorrectListOfFoodReturned" time="0"/>
 </testsuite>

@@ -25,7 +25,7 @@ public class CatTest {
     }
 
     @Test
-    public void testGetSound()
+    public void getSoundCorrectValueReturned()
     {
        String expected = "Мяу";
        String actual = cat.getSound();
@@ -33,7 +33,7 @@ public class CatTest {
     }
 
     @Test
-    public void testGetMeat() throws Exception
+    public void getFoodVerifyInnerEntityMethodInvoked() throws Exception
     {
         cat.getFood();
         Mockito.verify(feline).eatMeat();

@@ -7,11 +7,13 @@ public class MadagascarLion extends Lion{
 
     public final String NAME = "Alex";
 
-    private String placeOfLiving = "Нью-Йоркский зоопарк";
-    private List<String> friends = List.of("Марти", "Глория", "Мелман");
+    private String placeOfLiving;
+    private List<String> friends;
 
     public MadagascarLion(Feline feline) throws Exception {
         super("Самец", feline);
+        placeOfLiving = "Нью-Йоркский зоопарк";
+        friends = List.of("Марти", "Глория", "Мелман");
     }
 
     public String getPlaceOfLiving() {

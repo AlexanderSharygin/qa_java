@@ -3,17 +3,12 @@ package com.example;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-
-
-
 import java.util.List;
 
 
 public class FelineTest {
 
-
   private Feline feline;
-
 
     @Before
     public void beforeTest()
@@ -21,9 +16,8 @@ public class FelineTest {
         feline = new Feline();
     }
 
-
     @Test
-    public void testEatMeat() throws Exception
+    public void eatMeatCorrectValuesReturned() throws Exception
     {
 
         List<String> actual = feline.eatMeat();
@@ -32,7 +26,7 @@ public class FelineTest {
     }
 
     @Test
-    public void testGetFamily()
+    public void getFamilyCorectValueReturned()
     {
         String actual = feline.getFamily();
         String expected = "Кошачьи";
@@ -40,7 +34,7 @@ public class FelineTest {
     }
 
     @Test
-    public void tesGetKittens()
+    public void getKittensCorrectValueReturned()
     {
         int actual = feline.getKittens();
         int expected =1;
@@ -48,7 +42,7 @@ public class FelineTest {
     }
 
     @Test
-    public void testGetKittensWithIntArgument()
+    public void getKittensWithIntArgumentCorrectValueReturned()
     {
         int actual = feline.getKittens(5);
         int expected =5;

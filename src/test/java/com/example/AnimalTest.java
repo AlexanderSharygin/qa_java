@@ -17,20 +17,20 @@ public class AnimalTest {
     }
 
     @Test
-    public void testGetFoodForPredator() throws Exception {
+    public void getFoodForPredatorCorrectListOfFoodReturned() throws Exception {
          List<String> actual = animal.getFood("Травоядное");
         List<String> expected = List.of("Трава", "Различные растения");
         Assert.assertEquals(expected, actual);
     }
     @Test
-    public void getFoodForHerbivore() throws Exception {
+    public void getFoodForHerbivoreCorrectListOfFoodReturned() throws Exception {
         List<String> actual = animal.getFood("Хищник");
         List<String> expected = List.of("Животные", "Птицы", "Рыба");
         Assert.assertEquals(expected, actual);
     }
 
     @Test
-    public void getFamily() {
+    public void getFamilyCorrectStringReturned() {
         String actual = animal.getFamily();
         String expected = "Существует несколько семейств: заячьи, беличьи, мышиные, кошачьи, псовые, медвежьи, куньи";
         Assert.assertEquals(expected, actual);

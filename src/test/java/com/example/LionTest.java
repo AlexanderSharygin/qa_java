@@ -1,15 +1,11 @@
 package com.example;
 
-
-
 import org.junit.Before;
-
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.junit.MockitoJUnitRunner;
-
 
 @RunWith(MockitoJUnitRunner.class)
 public class LionTest {
@@ -26,13 +22,13 @@ public class LionTest {
 
 
     @Test
-    public void testGetKittens() {
+    public void getKittensInnerEntityMethodInvoked() {
         lion.getKittens();
         Mockito.verify(feline).getKittens();
     }
 
     @Test
-    public void testGetFood() throws Exception {
+    public void getFoodInnerEntityMethodInvoked() throws Exception {
         lion.getFood();
         Mockito.verify(feline).getFood("Хищник");
 

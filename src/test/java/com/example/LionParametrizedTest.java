@@ -15,7 +15,6 @@ public class LionParametrizedTest {
 
     @Mock
     Feline feline;
-
     private final String sex;
     private final boolean expected;
 
@@ -41,7 +40,7 @@ public class LionParametrizedTest {
     }
 
     @Test
-    public void testDoesHaveMane() throws Exception {
+    public void doesHaveManeLionsWithCorrectSexCorrectValueReturned() throws Exception {
         Lion lion = new Lion(sex, feline);
         boolean actual = lion.doesHaveMane();
         Assert.assertEquals(expected, actual);

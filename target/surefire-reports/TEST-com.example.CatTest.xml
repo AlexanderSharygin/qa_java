@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="2" failures="0" name="com.example.CatTest" time="1.035" errors="0" skipped="0">
+<testsuite tests="2" failures="0" name="com.example.CatTest" time="1.031" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="11.0.13+8-LTS"/>
@@ -65,6 +65,6 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="com.example.CatTest" name="testGetSound" time="0.995"/>
-  <testcase classname="com.example.CatTest" name="testGetMeat" time="0.04"/>
+  <testcase classname="com.example.CatTest" name="getFoodVerifyInnerEntityMethodInvoked" time="1.031"/>
+  <testcase classname="com.example.CatTest" name="getSoundCorrectValueReturned" time="0"/>
 </testsuite>

@@ -11,7 +11,7 @@ public class LionExceptionsTest {
     @Mock
     Feline feline;
     @Test
-    public void testDoesHaveManeExceptionThrowing()
+    public void doesHaveManeForLionWithWrongSexThrowsException()
     {
        try
        {
@@ -20,7 +20,6 @@ public class LionExceptionsTest {
        catch (Exception e)
        {
            Assert.assertEquals("Используйте допустимые значения пола животного - самей или самка", e.getMessage());
-
        }
     }
 

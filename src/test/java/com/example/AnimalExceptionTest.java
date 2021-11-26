@@ -5,7 +5,7 @@ import org.junit.Test;
 
 public class AnimalExceptionTest {
     @Test
-    public void tesGetFoodExceptionThrowing()
+    public void getFoodForWrongAnimalKindThrowsException()
     {
         Animal animal = new Animal();
         try
