@@ -10,7 +10,7 @@ public class MadagascarLion extends Lion{
     private String placeOfLiving;
     private List<String> friends;
 
-    public MadagascarLion(Feline feline) throws Exception {
+    public MadagascarLion(Feline feline) throws InvalidSexNameException {
         super("Самец", feline);
         placeOfLiving = "Нью-Йоркский зоопарк";
         friends = List.of("Марти", "Глория", "Мелман");

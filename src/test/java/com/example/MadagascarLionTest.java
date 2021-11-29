@@ -17,7 +17,7 @@ public class MadagascarLionTest {
     Feline feline;
 
     @Before
-    public void beforeTest() throws Exception {
+    public void beforeTest() throws InvalidSexNameException {
       madagascarLion= new MadagascarLion(feline);
     }
 

@@ -40,7 +40,7 @@ public class LionParametrizedTest {
     }
 
     @Test
-    public void doesHaveManeLionsWithCorrectSexCorrectValueReturned() throws Exception {
+    public void doesHaveManeLionsWithCorrectSexCorrectValueReturned() throws InvalidSexNameException {
         Lion lion = new Lion(sex, feline);
         boolean actual = lion.doesHaveMane();
         Assert.assertEquals(expected, actual);

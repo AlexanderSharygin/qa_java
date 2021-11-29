@@ -16,7 +16,7 @@ public class LionTest {
     Feline feline;
 
     @Before
-    public void beforeTest() throws Exception {
+    public void beforeTest() throws InvalidSexNameException {
         lion = new Lion("Самец", feline);
     }
 
